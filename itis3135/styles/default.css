@@ -1,4 +1,14 @@
 body
 {
-    color: #CD7F32
+    font-family: Tahoma, sans-serif;
+    color: #CD7F32;
+    background-color: #292F36;
+}
+
+a{ color: #EEF0F2; }
+
+header{
+    font-family: Courier, serif;
+    text-align: center;
+    color: #EBCCAD;
 }
