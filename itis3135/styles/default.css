@@ -36,4 +36,11 @@ th, td {
     padding: 20px;
 }
 
+tbody tr:nth-child(odd) {
+    background-color: #633D18;
+}
+tbody tr:nth-child(even) {
+    background-color: #EBCCAD;
+}
+
 footer{text-align: center;}
