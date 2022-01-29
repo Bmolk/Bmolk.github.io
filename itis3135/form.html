@@ -19,8 +19,8 @@
     </nav>
     <main>
         <h2>Form</h2>
-        
-        <form action="/action_page.php">
+
+        <form>
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name"><br>
 
@@ -29,14 +29,25 @@
 
             <label for="phone">Phone Numer:</label><br>
             <input type="text" id="phone" name="phone">
+        </form>
 
-            <input type="checkbox" id="pc" name="pc" value="PC">
-            <label for="pc"> I have a PC</label><br>
-            <input type="checkbox" id="cell" name="cell" value="Cell Phone">
-            <label for="cell"> I have a Cell Phone</label><br>
-            <input type="checkbox" id="laptop" name="laptop" value="Laptop">
-            <label for="laptop"> I have a Laptop</label>
+        <form>
+        <input type="radio" id="game" name="entertainment" value="Video Game">
+        <label for="game">Video Game</label><br>
+        <input type="radio" id="movie" name="entertainment" value="Movie">
+        <label for="movie">Movie</label><br>
+        </form>
 
+        <form>
+        <input type="checkbox" id="pc" name="pc" value="PC">
+        <label for="pc"> I have a PC</label><br>
+        <input type="checkbox" id="cell" name="cell" value="Cell Phone">
+        <label for="cell"> I have a Cell Phone</label><br>
+        <input type="checkbox" id="laptop" name="laptop" value="Laptop">
+        <label for="laptop"> I have a Laptop</label>
+        </form>
+        
+        <form action="/action_page.php">
             <input type="submit" value="Submit">
         </form>
     </main>
