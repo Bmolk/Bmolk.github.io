@@ -42,7 +42,7 @@ tbody tr:nth-child(even) {
     background-color: #EBCCAD;
 }
 
-input[type=text] {
+input[type = text] {
     box-sizing: border-box;
     border: 2px solid #CD7F32;
     border-radius: 10px;
