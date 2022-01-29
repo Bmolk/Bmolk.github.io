@@ -35,12 +35,20 @@ thead th:nth-child(4) {
 th, td {
     padding: 20px;
 }
-
 tbody tr:nth-child(odd) {
     background-color: #633D18;
 }
 tbody tr:nth-child(even) {
     background-color: #EBCCAD;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    border: 2px solid #CD7F32;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #AEB8C1;
+    padding: 12px 20px 12px 40px;
 }
 
 footer{text-align: center;}
