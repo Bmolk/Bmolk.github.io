@@ -3,6 +3,8 @@ body
     font-family: Tahoma, sans-serif;
     color: #CD7F32;
     background-color: #292F36;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
 a{ color: #AEB8C1; }
