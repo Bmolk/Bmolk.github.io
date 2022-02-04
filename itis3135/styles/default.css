@@ -14,6 +14,8 @@ header{
     color: #EBCCAD;
 }
 
+nav{text-align: center;}
+
 table {
     table-layout: fixed;
     width: 100%;
