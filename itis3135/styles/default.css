@@ -7,6 +7,12 @@ body
     margin-left: 200px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a{ color: #AEB8C1; }
 a:hover { color: #EEF0F2; }
 
