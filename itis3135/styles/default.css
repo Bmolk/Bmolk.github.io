@@ -16,7 +16,10 @@ header{
     color: #b9a58c;
 }
 
-nav{text-align: center;}
+nav{
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+}
 
 table {
     table-layout: fixed;
