@@ -1,78 +1,85 @@
 <!DOCTYPE html>
-<htlm lang = "en-US"> 
-<head>
-    <meta charset = "uft-8">
-    <title>Ben Molk | ITIS 3135 |  Bronze Mammoth Scripts</title>
-    <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
-</head>
-<body>
-    <header>
-        <h1>Ben Molk | ITIS 3135 |  Bronze Mammoth</h1>
-        <nav>
-            <a href = "./">Home |</a>
-            <a href = "introduction.html">Introduction |</a>
-            <a href = "contract.html">Contract |</a>
-            <a href = "table.html">Tables |</a>
-            <a href = "form.html">Form |</a>
-            <a href = "brand.html">Brand |</a> 
-            <a href = "stuff/CraP.html">Crap |</a>
-            <a href = "firstscripts.html">First Scripts |</a>
-            <a href = "website_evaluations.html">Website Evaluations|</a>
-            <a href = "/">Charlotte Home</a>
-        </nav>
-    </header>
+<htlm lang="en-US">
+
+    <head>
+        <meta charset="uft-8">
+        <title>Ben Molk | ITIS 3135 | Bronze Mammoth Scripts</title>
+        <link href="styles/default.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Ben Molk | ITIS 3135 | Bronze Mammoth</h1>
+            <nav>
+                <a href="./">Home |</a>
+                <a href="introduction.html">Introduction |</a>
+                <a href="contract.html">Contract |</a>
+                <a href="table.html">Tables |</a>
+                <a href="form.html">Form |</a>
+                <a href="brand.html">Brand |</a>
+                <a href="stuff/CraP.html">Crap |</a>
+                <a href="firstscripts.html">First Scripts |</a>
+                <a href="website_evaluations.html">Website Evaluations|</a>
+                <a href="/">Charlotte Home</a>
+            </nav>
+        </header>
         <hr>
-    <main>
-        <h2> First Javascript</h2>
-        <p>Javascript goes here</p>
-        <p>
-            What is your first name?: <br/>
-            <input type = "text" placeholder = " John" id = "firstname" name = "firstname" />
-            <br/>
-            How are you feeling today?: <br/>
-            <input type = "text" placeholder = " Good" id = "feeling" name = "feeling" />
-            <br/><br/>
-            <input onclick = "getName();" 
-            type = "button" name = "submit" id = "submit" value = "Submit" />
+        <main>
+            <h2> First Javascript</h2>
+            <h3 id=date>Date goes here</h3>
+            <p>This is a demonstration of my first javascripts.</p>
+            <p>
+                What is your first name?: <br />
+                <input type="text" placeholder=" John" id="firstname" name="firstname" />
+                <br />
+                How are you feeling today?: <br />
+                <input type="text" placeholder=" Good" id="feeling" name="feeling" />
+                <br /><br />
+                <input onclick="getName();" type="button" name="submit" id="submit" value="Submit" />
             </p>
-            <p id = "output">
-            Welcome
+            <p id="output">
+                Welcome
             </p>
-        
-        <script>
-        
-                function getName()
-                {
-                    let firstName = document.getElementById("firstname").value;
-                    //document.write("<h1>" + firstName + "</h1>");
-        
-                    let feeling = document.getElementById("feeling").value;
-                    //document.write("<h1>" + feeling + "</h1>");
-        
-                    let allText = "Hey there, " + firstName + "! I'm glad you're feeling " + feeling + "!";
-                    document.getElementById("output").innerHTML= allText;
-        
+
+            <script>
+                document.getElementById("date").innerHTML = getDate();
+                function getDate() {
+                    var d = new Date(),
+                        minutes = d.getMinutes();
+                        hours = d.getHours() % 12;
+                        meridiem = d.getHours() >= 12 ? 'pm' : 'am',
+                        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                        days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                    return "It is " + hours + ':' + minutes + meridiem + " on " + days[d.getDay()] + ', ' + months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
                 }
-               // alert(firstName);
+
+                function getName() {
+                    let firstName = document.getElementById("firstname").value;
+
+                    let feeling = document.getElementById("feeling").value;
+
+                    let allText = "Hey there, " + firstName + "! I'm glad you're feeling " + feeling + "!";
+                    document.getElementById("output").innerHTML = allText;
+                }
             </script>
-    </main>
-    <hr>
-    <footer>
-        <nav>
-            <a href = "https://webpages.charlotte.edu/bmolk/">Charlotte.edu |</a>
-            <a href = "https://github.com/Bmolk">Github|</a>
-            <a href = "https://bmolk.github.io/">Github.io|</a>
-            <a href = "https://bmolk.github.io/itis3135/">ITIS 3135 Github Pages|</a>
-            <a href = "https://www.codecademy.com/profiles/Bmolk">CodeAcademy |</a>
-            <a href = "https://www.freecodecamp.org/Bmolk">freeCodeCamp |</a>
-            <a href = "https://jsfiddle.net/user/Bmolk/fiddles">JSfiddle |</a>
-            <a href = "https://www.linkedin.com/in/benjamin-molk-584392207/">LinkedIn</a>
-        </nav>
-        Created by <a href = "bronzemammoth.co/index.html">Bronze Mammoth</a> &copy;2022.
-        <p>
-            <img src="images/button_validation_css.jpg">
-            <img src="images/button_validation_html5.jpg">
-        </p>
-    </footer>
+        </main>
+        <hr>
+        <footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/bmolk/">Charlotte.edu |</a>
+                <a href="https://github.com/Bmolk">Github|</a>
+                <a href="https://bmolk.github.io/">Github.io|</a>
+                <a href="https://bmolk.github.io/itis3135/">ITIS 3135 Github Pages|</a>
+                <a href="https://www.codecademy.com/profiles/Bmolk">CodeAcademy |</a>
+                <a href="https://www.freecodecamp.org/Bmolk">freeCodeCamp |</a>
+                <a href="https://jsfiddle.net/user/Bmolk/fiddles">JSfiddle |</a>
+                <a href="https://www.linkedin.com/in/benjamin-molk-584392207/">LinkedIn</a>
+            </nav>
+            Created by <a href="bronzemammoth.co/index.html">Bronze Mammoth</a> &copy;2022.
+            <p>
+                <img src="images/button_validation_css.jpg">
+                <img src="images/button_validation_html5.jpg">
+            </p>
+        </footer>
     </body>
 </htlm>
