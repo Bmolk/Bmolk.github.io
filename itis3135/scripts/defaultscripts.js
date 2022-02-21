@@ -24,5 +24,7 @@ function getName() {
 function promptSides(){
     var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
 
+    if(isNaN(sideCount)) alert("you're a jerk")
+
     document.getElementById("results").innerHTML = sideCount;
 }
