@@ -29,7 +29,8 @@ function promptSides() {
 
 
     var polygonName = getPolygonName(sideCount);
-    document.getElementById("results").innerHTML += polygonName;
+    var responsePhrase = "The polygon with " + sideCount + " side is a/an " + polygonName +".";
+    document.getElementById("results").innerHTML += responsePhrase;
 }
 
 function validateEntry(_sideCount) {
