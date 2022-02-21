@@ -23,6 +23,7 @@ function getName() {
 
 function promptSides(){
     var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides (1-10).");
+    validateEntry(sideCount);
 
     document.getElementById("results").innerHTML = sideCount;
 }
