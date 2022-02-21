@@ -25,12 +25,10 @@ function promptSides() {
     var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides (1-10).");
     sideCount = validateEntry(sideCount);
 
-    document.getElementById("results").innerHTML = sideCount;
-
 
     var polygonName = getPolygonName(sideCount);
     var responsePhrase = "The polygon with " + sideCount + " side is a/an " + polygonName +".";
-    document.getElementById("results").innerHTML += responsePhrase;
+    document.getElementById("results").innerHTML = responsePhrase;
 }
 
 function validateEntry(_sideCount) {
