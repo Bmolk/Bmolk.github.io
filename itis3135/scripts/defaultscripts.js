@@ -20,3 +20,9 @@ function getName() {
     let allText = "Hey there, " + firstName + "! I'm glad you're feeling " + feeling + "!";
     document.getElementById("output").innerHTML = allText;
 }
+
+function promptSides(){
+    var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
+
+    document.getElementById("results").innerHTML = sideCount;
+}
