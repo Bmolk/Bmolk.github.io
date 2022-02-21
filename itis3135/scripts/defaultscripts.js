@@ -27,7 +27,7 @@ function promptSides() {
 
 
     var polygonName = getPolygonName(sideCount);
-    var responsePhrase = "The polygon with " + sideCount + " side is a/an " + polygonName +".";
+    var responsePhrase = "The polygon with " + sideCount + " side is a/an " + polygonName + ".";
     document.getElementById("results").innerHTML = responsePhrase;
 }
 
@@ -36,7 +36,7 @@ function validateEntry(_sideCount) {
         alert("Please input a valid number");
         _sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
     }
-    while (1 > _sideCount || _sideCount > 10){
+    while (1 > _sideCount || _sideCount > 10) {
         alert("Please input a number between 1 and 10");
         _sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
     }
@@ -44,6 +44,6 @@ function validateEntry(_sideCount) {
 }
 
 function getPolygonName(_sideCount) {
-    var polygonList = new Array ("Monogon", "Bigon", "Triangle", "Quadrilateral", "Pentagon", "Hexagon", "Septagon", "Octagon", "Nonagon", "Decagon");
+    var polygonList = new Array("Monogon", "Bigon", "Triangle", "Quadrilateral", "Pentagon", "Hexagon", "Septagon", "Octagon", "Nonagon", "Decagon");
     return polygonList[_sideCount - 1];
 }
