@@ -22,9 +22,14 @@ function getName() {
 }
 
 function promptSides(){
-    var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
-
-    if(isNaN(sideCount)) alert("you're a jerk")
+    var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides (1-10).");
 
     document.getElementById("results").innerHTML = sideCount;
+}
+
+function validateEntry(sideCount){
+    if(isNaN(sideCount)){
+        alert("Please input a valid number")
+        sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
+    }
 }
