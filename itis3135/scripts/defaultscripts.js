@@ -24,6 +24,7 @@ function getName() {
 function promptSides() {
     var sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides (1-10).");
     sideCount = validateEntry(sideCount);
+    
 
 
     var polygonName = getPolygonName(sideCount);
@@ -35,12 +36,6 @@ function validateEntry(_sideCount) {
     while (isNaN(_sideCount)) {
         alert("Please input a valid number");
         _sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
-        if (1 > _sideCount || _sideCount > 10) {
-            while (1 > _sideCount || _sideCount > 10) {
-                alert("Please input a number between 1 and 10");
-                _sideCount = prompt("The Bronze Mammoth would like you to enter a number of sides.");
-            }
-        }
     }
     return _sideCount;
 }
