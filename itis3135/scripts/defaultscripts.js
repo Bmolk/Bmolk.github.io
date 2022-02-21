@@ -40,6 +40,6 @@ function validateEntry(_sideCount) {
 }
 
 function getPolygonName(_sideCount) {
-    var polygonList = new Array("Monogon, Bigon, Triangle, Quadrilateral, Pentagon, Hexagon, Septagon, Octagon, Nonagon, Decagon")
+    var polygonList = new Array ("Monogon", "Bigon", "Triangle", "Quadrilateral", "Pentagon", "Hexagon", "Septagon", "Octagon", "Nonagon", "Decagon");
     return polygonList[_sideCount - 1];
 }
