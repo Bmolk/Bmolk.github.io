@@ -57,4 +57,13 @@ input[type = text] {
     background-color: #AEB8C1;
 }
 
+.calculator__keys { 
+    display: grid;  
+}
+
+button{
+    color:#292F36;
+    background-color:#CD7F32;
+}
+
 footer{text-align: center;}
