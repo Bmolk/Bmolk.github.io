@@ -1,36 +1,38 @@
-const calculator = document.querySelector(".calculator")
-const keys = calculator.querySelector(".calculator__keys")
-
-keys.addEventListener("click", e => {
-    if (e.target.matches("button")) {
-        // Do something
+const calculator = {
+    displayValue: '0',
+    firstOperand: null,
+    waitingForSecondOperand: false,
+    operator: null,
+  };
+  
+  function updateDisplay() {
+    const display = document.querySelector('.calculator-screen');
+    display.value = calculator.displayValue;
+  }
+  
+  updateDisplay();
+  
+  const keys = document.querySelector('.calculator-keys');
+  keys.addEventListener('click', (event) => {
+    const { target } = event;
+    if (!target.matches('button')) {
+      return;
     }
-})
-
-const key = e.target
-const action = key.dataset.action
-
-if (!action) {
-    console.log('number key!')
-}
-
-if (
-    action === 'add' ||
-    action === 'subtract' ||
-    action === 'multiply' ||
-    action === 'divide'
-) {
-    console.log('operator key!')
-}
-
-if (action === 'decimal') {
-    console.log('decimal key!')
-}
-
-if (action === 'clear') {
-    console.log('clear key!')
-}
-
-if (action === 'calculate') {
-    console.log('equal key!')
-}
+  
+    if (target.classList.contains('operator')) {
+      console.log('operator', target.value);
+      return;
+    }
+  
+    if (target.classList.contains('decimal')) {
+      console.log('decimal', target.value);
+      return;
+    }
+  
+    if (target.classList.contains('all-clear')) {
+      console.log('clear', target.value);
+      return;
+    }
+  
+    console.log('digit', target.value);
+  });
